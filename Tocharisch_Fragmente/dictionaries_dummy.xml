@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title>Dummy Tocharian Dictionary</title>
+        </title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Dummy Publisher</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Synthetic test data.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="txt" matchPattern="(.+)" replacementPattern="fragments_dummy.xml#$1"/>
+        <prefixDef ident="ref" matchPattern="(.+)" replacementPattern="bibliography_dummy.xml#$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:id="E_dummy_lemma" xml:lang="txb">
+        <form type="lemma">
+          <desc>
+            <cit>
+              <quote>dummy lemma meaning</quote>
+            </cit>
+          </desc>
+          <orth>dummylemma</orth>
+        </form>
+        <sense>
+          <cit>
+            <quote>dummy sense gloss</quote>
+          </cit>
+        </sense>
+        <gramGrp>
+          <gram type="pos" value="noun"/>
+          <gram type="gender" value="masculine"/>
+        </gramGrp>
+        <note>
+          <bibl>
+            <title corresp="ref:dummy_source_2026"/>
+            <citedRange>12</citedRange>
+          </bibl>
+        </note>
+        <form xml:id="F_dummy_1">
+          <desc>
+            <cit>
+              <quote>dummy inflected form one</quote>
+            </cit>
+            <gloss>nom.sg</gloss>
+          </desc>
+          <gramGrp>
+            <gram type="case" value="nominative"/>
+            <gram type="number" value="singular"/>
+          </gramGrp>
+          <orth>dummylemma-1</orth>
+        </form>
+        <form xml:id="F_dummy_2">
+          <desc>
+            <cit>
+              <quote>dummy inflected form two</quote>
+            </cit>
+            <gloss>acc.sg</gloss>
+          </desc>
+          <gramGrp>
+            <gram type="case" value="accusative"/>
+            <gram type="number" value="singular"/>
+          </gramGrp>
+          <orth>dummylemma-2</orth>
+        </form>
+        <entry xml:id="E_dummy_subentry" xml:lang="txb">
+          <form type="lemma">
+            <orth>dummysubentry</orth>
+          </form>
+          <sense>
+            <cit>
+              <quote>dummy nested entry</quote>
+            </cit>
+          </sense>
+          <gramGrp>
+            <gram type="pos" value="adjective"/>
+          </gramGrp>
+          <note>
+            <bibl>
+              <title corresp="ref:dummy_source_2026"/>
+              <citedRange>13</citedRange>
+            </bibl>
+          </note>
+        </entry>
+      </entry>
+    </body>
+  </text>
+</TEI>

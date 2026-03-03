@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Dummy Tocharian Fragment Corpus</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Dummy Publisher</publisher>
+        <availability>
+          <p>public</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Synthetic test data.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <TEI xml:id="FRAG_0001" next="FRAG_0002">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>Dummy Fragment 1</title>
+          <respStmt>
+            <resp>Edited by</resp>
+            <name>Dummy Editor</name>
+          </respStmt>
+        </titleStmt>
+        <publicationStmt>
+          <publisher>Dummy Publisher</publisher>
+          <availability>
+            <p>public</p>
+          </availability>
+        </publicationStmt>
+        <sourceDesc>
+          <msDesc>
+            <msIdentifier>
+              <repository>Dummy Repository</repository>
+              <idno>MS-0001</idno>
+              <altIdentifier>
+                <idno>ALT-0001</idno>
+              </altIdentifier>
+              <msName>Dummy Manuscript 1</msName>
+            </msIdentifier>
+            <msContents>
+              <msItem>
+                <title>Dummy Content Title 1</title>
+              </msItem>
+            </msContents>
+            <physDesc>
+              <objectDesc>
+                <supportDesc>
+                  <support>
+                    <material>paper</material>
+                    <objectType>fragment</objectType>
+                  </support>
+                  <extent>
+                    <dimensions unit="cm">
+                      <height>5</height>
+                      <width>4</width>
+                    </dimensions>
+                  </extent>
+                </supportDesc>
+                <layoutDesc>
+                  <layout>
+                    <measure type="lines">1</measure>
+                    <dimensions type="written" unit="cm">
+                      <height>3</height>
+                    </dimensions>
+                  </layout>
+                </layoutDesc>
+              </objectDesc>
+              <handDesc>
+                <handNote medium="ink"/>
+              </handDesc>
+              <scriptDesc>
+                <scriptNote>dummy script note</scriptNote>
+              </scriptDesc>
+            </physDesc>
+            <history>
+              <provenance>
+                <region>DummyRegion</region>
+                <placeName>DummyPlace</placeName>
+                <rs>EXP-001</rs>
+              </provenance>
+            </history>
+          </msDesc>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <textClass>
+          <keywords>
+            <term type="genre">narrative</term>
+            <term type="subgenre">test</term>
+            <term type="prose_verse">prose,verse</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="transcription">
+          <p>
+            <s>
+              <w corresp="lex:F_dummy_1" n="pos:noun">
+                <lb corresp="FRAG_0001_l1"/>
+                dummy
+              </w>
+              <w corresp="lex:F_dummy_2" n="pos:verb">token</w>
+            </s>
+          </p>
+        </div>
+        <div type="translation">
+          <p>
+            <seg corresp="FRAG_0001_l1">
+              <seg>Dummy line one translation.</seg>
+            </seg>
+            <seg corresp="FRAG_0001_l1">
+              <bibl>
+                <title corresp="ref:dummy_source_2026"/>
+                <citedRange>12-13</citedRange>
+              </bibl>
+              <seg>Alternative translated wording.</seg>
+            </seg>
+          </p>
+        </div>
+      </body>
+    </text>
+  </TEI>
+
+  <TEI xml:id="FRAG_0002" prev="FRAG_0001">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>Dummy Fragment 2</title>
+        </titleStmt>
+        <publicationStmt>
+          <publisher>Dummy Publisher</publisher>
+          <availability>
+            <p>public</p>
+          </availability>
+        </publicationStmt>
+        <sourceDesc>
+          <msDesc>
+            <msIdentifier>
+              <repository>Dummy Repository</repository>
+              <idno>MS-0002</idno>
+              <altIdentifier>
+                <idno>ALT-0002</idno>
+              </altIdentifier>
+            </msIdentifier>
+            <physDesc>
+              <objectDesc>
+                <supportDesc>
+                  <support>
+                    <material>paper</material>
+                    <objectType>fragment</objectType>
+                  </support>
+                  <extent>
+                    <dimensions unit="cm">
+                      <height>6</height>
+                      <width>5</width>
+                    </dimensions>
+                  </extent>
+                </supportDesc>
+                <layoutDesc>
+                  <layout>
+                    <measure type="lines">1</measure>
+                    <dimensions type="written" unit="cm">
+                      <height>4</height>
+                    </dimensions>
+                  </layout>
+                </layoutDesc>
+              </objectDesc>
+              <handDesc>
+                <handNote medium="ink"/>
+              </handDesc>
+              <scriptDesc>
+                <scriptNote>dummy script note</scriptNote>
+              </scriptDesc>
+            </physDesc>
+            <history>
+              <provenance>
+                <region>DummyRegion</region>
+                <placeName>DummyPlace</placeName>
+                <rs>EXP-002</rs>
+              </provenance>
+            </history>
+          </msDesc>
+        </sourceDesc>
+      </fileDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="transcription">
+          <p>
+            <s>
+              <w corresp="lex:F_dummy_1" n="pos:noun">
+                <lb corresp="FRAG_0002_l1"/>
+                second
+              </w>
+              <w corresp="lex:F_dummy_2" n="pos:verb">fragment</w>
+            </s>
+          </p>
+        </div>
+        <div type="translation">
+          <p>
+            <seg corresp="FRAG_0002_l1">
+              <bibl>
+                <title corresp="ref:dummy_source_2026"/>
+                <citedRange>20</citedRange>
+              </bibl>
+              <seg>Dummy translation for fragment two.</seg>
+            </seg>
+          </p>
+        </div>
+      </body>
+    </text>
+  </TEI>
+</teiCorpus>

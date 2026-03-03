@@ -1,0 +1,289 @@
+nodes:
+  ExpeditionCode:
+    properties:
+      - code
+  Fragment:
+    properties:
+      - scriptNote
+      - lines_measure
+      - frag_id
+      - publisher
+      - medium
+      - title
+  Region:
+    properties:
+      - name
+  Manuscript:
+    properties:
+      - altIdentifier
+      - repository
+      - idno
+  Person:
+    properties:
+      - name
+  Place:
+    properties:
+      - name
+  Genre:
+    properties:
+      - name
+  SubGenre:
+    properties:
+      - name
+  Line:
+    properties:
+      - line_id
+      - line_position
+  Word:
+    properties:
+      - position_in_line
+      - translation
+      - corresp
+      - word
+      - grammar_info
+  Literature:
+    properties:
+      - title
+  Translation:
+    properties:
+      - translation
+      - uuid
+  LexicalEntry:
+    properties:
+      - id
+      - orth
+      - meaning
+      - lang
+      - etym_lang
+      - etym_form
+      - number_local
+      - number_inherited
+      - number_effective
+      - gender_local
+      - gender_inherited
+      - gender_effective
+      - plural_local
+      - plural_inherited
+      - plural_effective
+      - case_local
+      - case_inherited
+      - case_effective
+      - root_character_local
+      - root_character_inherited
+      - root_character_effective
+      - stem_gender_local
+      - stem_gender_inherited
+      - stem_gender_effective
+      - nominative_local
+      - nominative_inherited
+      - nominative_effective
+      - emphatic_local
+      - emphatic_inherited
+      - emphatic_effective
+      - voice_local
+      - voice_inherited
+      - voice_effective
+      - stem_local
+      - stem_inherited
+      - stem_effective
+      - person_local
+      - person_inherited
+      - person_effective
+      - tense_local
+      - tense_inherited
+      - tense_effective
+      - valency_local
+      - valency_inherited
+      - valency_effective
+      - deixis_local
+      - deixis_inherited
+      - deixis_effective
+      - pos_local
+      - pos_inherited
+      - pos_effective
+      - accusative_local
+      - accusative_inherited
+      - accusative_effective
+      - root_vowel_local
+      - root_vowel_inherited
+      - root_vowel_effective
+      - stem-emphatic_local
+      - stem-emphatic_inherited
+      - stem-emphatic_effective
+      - pronoun_suffix_local
+      - pronoun_suffix_inherited
+      - pronoun_suffix_effective
+      - paradigm_local
+      - paradigm_inherited
+      - paradigm_effective
+      - noun_class_local
+      - noun_class_inherited
+      - noun_class_effective
+      - subclass_local
+      - subclass_inherited
+      - subclass_effective
+      - stem_class_local
+      - stem_class_inherited
+      - stem_class_effective
+
+  InflectedForm:
+    properties:
+      - id
+      - orth
+      - meaning
+      - lang
+      - etym_lang
+      - etym_form
+      - number_local
+      - number_inherited
+      - number_effective
+      - gender_local
+      - gender_inherited
+      - gender_effective
+      - plural_local
+      - plural_inherited
+      - plural_effective
+      - case_local
+      - case_inherited
+      - case_effective
+      - root_character_local
+      - root_character_inherited
+      - root_character_effective
+      - stem_gender_local
+      - stem_gender_inherited
+      - stem_gender_effective
+      - nominative_local
+      - nominative_inherited
+      - nominative_effective
+      - emphatic_local
+      - emphatic_inherited
+      - emphatic_effective
+      - voice_local
+      - voice_inherited
+      - voice_effective
+      - stem_local
+      - stem_inherited
+      - stem_effective
+      - person_local
+      - person_inherited
+      - person_effective
+      - tense_local
+      - tense_inherited
+      - tense_effective
+      - valency_local
+      - valency_inherited
+      - valency_effective
+      - deixis_local
+      - deixis_inherited
+      - deixis_effective
+      - pos_local
+      - pos_inherited
+      - pos_effective
+      - accusative_local
+      - accusative_inherited
+      - accusative_effective
+      - root_vowel_local
+      - root_vowel_inherited
+      - root_vowel_effective
+      - stem-emphatic_local
+      - stem-emphatic_inherited
+      - stem-emphatic_effective
+      - pronoun_suffix_local
+      - pronoun_suffix_inherited
+      - pronoun_suffix_effective
+      - paradigm_local
+      - paradigm_inherited
+      - paradigm_effective
+      - noun_class_local
+      - noun_class_inherited
+      - noun_class_effective
+      - subclass_local
+      - subclass_inherited
+      - subclass_effective
+      - stem_class_local
+      - stem_class_inherited
+      - stem_class_effective
+relationships:
+  CITED_IN:
+    from:
+      - Line
+      - Lemma
+      - LexicalEntry
+    to: Literature
+    properties:
+      - range
+  EDITED_BY:
+    from: Fragment
+    to: Person
+    properties: []
+  FOUND_IN:
+    from: Fragment
+    to:
+      - Place
+      - Region
+    properties: []
+  FOUND_IN_EXPEDITION:
+    from: Fragment
+    to: ExpeditionCode
+    properties: []
+  HAS_LINE:
+    from: Fragment
+    to: Line
+    properties: []
+  HAS_MEANING:
+    from: Line
+    to: Translation
+    properties:
+      - order
+  HAS_WORD:
+    from: Line
+    to: Word
+    properties: []
+  IS_OF_GENRE:
+    from: Fragment
+    to:
+      - SubGenre
+      - Genre
+    properties: []
+  IS_PART_OF:
+    from: Fragment
+    to: Manuscript
+    properties: []
+  IS_PREDECESSOR:
+    from: Fragment
+    to: Fragment
+    properties: []
+  IS_SUCCESSOR:
+    from: Fragment
+    to: Fragment
+    properties: []
+  PART_OF_REGION:
+    from: Place
+    to: Region
+    properties: []
+  SUB_GENRE_OF:
+    from: SubGenre
+    to: Genre
+    properties: []
+  TRANSLATION_BY:
+    from: Translation
+    to: Literature
+    properties: []
+  REFERS_TO_INFLECTED_FORM:
+    from: Word
+    to: InflectedForm
+    properties: []
+  HAS_INFLECTED_FORM:
+    from:
+      - Lemma
+      - LexicalEntry
+    to:
+      InflectedForm
+    properties: []
+  HAS_SUBENTRY:
+    from: Lemma
+    to: LexicalEntry
+  NEXT:
+    from: Word
+    to: Word
+    properties: []

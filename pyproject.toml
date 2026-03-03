@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "tocharisch-llm"
+version = "0.1.0"
+description = ""
+authors = ["Benedikt Baumgartner <76727447+schepa123@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+black = "^25.1.0"
+langchain-community = "^0.3.25"
+tiktoken = "^0.9.0"
+langchainhub = "^0.1.21"
+langchain = "^0.3.25"
+langgraph = "^0.4.8"
+langchain-openai = "^0.3.24"
+python-dotenv = "^1.1.0"
+pytest = "^8.4.1"
+dataset = "^1.6.2"
+datasets = "^3.6.0"
+qdrant-client = "^1.14.3"
+langchain-qdrant = "^0.2.0"
+langchain-experimental = "^0.3.4"
+lxml = "^5.4.0"
+xmltodict = "^0.14.2"
+neo4j = "^5.28.1"
+tqdm = "^4.67.1"
+openai = "^1.93.3"
+streamlit = "^1.47.0"
+pyvis = "^0.3.2"
+streamlit-agraph = "^0.0.45"
+langchain-deepseek = "^0.1.4"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
