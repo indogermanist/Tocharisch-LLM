@@ -34,7 +34,7 @@ DEEPSEEK_API_KEY=""
 Notes:
 
 - `DEEPSEEK_API_KEY` is used for the chat model.
-- `OPENAI_API_KEY` is used for embeddings in Qdrant (`text-embedding-3-small`).
+- `OPENAI_API_KEY` is used for embeddings in Qdrant (`text-embedding-3-large`).
 - Optional for Dockerized networking:
   - `NEO_4J_HOST="neo4j"`
   - `QDRANT_HOST="qdrant"`

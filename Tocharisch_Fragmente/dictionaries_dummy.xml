@@ -1,98 +1,485 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>
-          <title>Dummy Tocharian Dictionary</title>
-        </title>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Dummy Publisher</publisher>
-      </publicationStmt>
-      <sourceDesc>
-        <p>Synthetic test data.</p>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <listPrefixDef>
-        <prefixDef ident="txt" matchPattern="(.+)" replacementPattern="fragments_dummy.xml#$1"/>
-        <prefixDef ident="ref" matchPattern="(.+)" replacementPattern="bibliography_dummy.xml#$1"/>
-      </listPrefixDef>
-    </encodingDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <entry xml:id="E_dummy_lemma" xml:lang="txb">
-        <form type="lemma">
-          <desc>
-            <cit>
-              <quote>dummy lemma meaning</quote>
-            </cit>
-          </desc>
-          <orth>dummylemma</orth>
-        </form>
-        <sense>
-          <cit>
-            <quote>dummy sense gloss</quote>
-          </cit>
-        </sense>
-        <gramGrp>
-          <gram type="pos" value="noun"/>
-          <gram type="gender" value="masculine"/>
-        </gramGrp>
-        <note>
-          <bibl>
-            <title corresp="ref:dummy_source_2026"/>
-            <citedRange>12</citedRange>
-          </bibl>
-        </note>
-        <form xml:id="F_dummy_1">
-          <desc>
-            <cit>
-              <quote>dummy inflected form one</quote>
-            </cit>
-            <gloss>nom.sg</gloss>
-          </desc>
-          <gramGrp>
-            <gram type="case" value="nominative"/>
-            <gram type="number" value="singular"/>
-          </gramGrp>
-          <orth>dummylemma-1</orth>
-        </form>
-        <form xml:id="F_dummy_2">
-          <desc>
-            <cit>
-              <quote>dummy inflected form two</quote>
-            </cit>
-            <gloss>acc.sg</gloss>
-          </desc>
-          <gramGrp>
-            <gram type="case" value="accusative"/>
-            <gram type="number" value="singular"/>
-          </gramGrp>
-          <orth>dummylemma-2</orth>
-        </form>
-        <entry xml:id="E_dummy_subentry" xml:lang="txb">
-          <form type="lemma">
-            <orth>dummysubentry</orth>
-          </form>
-          <sense>
-            <cit>
-              <quote>dummy nested entry</quote>
-            </cit>
-          </sense>
-          <gramGrp>
-            <gram type="pos" value="adjective"/>
-          </gramGrp>
-          <note>
-            <bibl>
-              <title corresp="ref:dummy_source_2026"/>
-              <citedRange>13</citedRange>
-            </bibl>
-          </note>
-        </entry>
-      </entry>
-    </body>
-  </text>
-</TEI>
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <title>Dictionary of the Projects A Comprehensive Edition of Tocharian Manuscripts and The Characters that Shaped the Silk Road</title>
+            </title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>University of Vienna</publisher>
+            <publisher>Austrian Academy of Sciences</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="txt" matchPattern="(.+)" replacementPattern="fragments.xml#$1"/>
+            <prefixDef ident="ref" matchPattern="(.+)" replacementPattern="bibliography.xml#$1"/>
+         </listPrefixDef>
+      </encodingDesc>
+   </teiHeader>
+   <text><body><entry xml:id="E_B_endretstseññe" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>“prtng to Endere”</quote>
+                  </cit>
+               </desc>
+               <orth>endretstseññe</orth>
+            </form>
+            <sense>
+               <cit>
+                  <quote>prtng to Endere</quote>
+               </cit>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="adjective"/>
+            </gramGrp>
+            <note>
+               <bibl>
+                  <title corresp="ref:adams2013a"/>
+                  <citedRange>92</citedRange>
+               </bibl>
+            </note>
+            <note resp="resp-masc">NPN</note>
+            <form xml:id="F_B_endretstseññe">
+               <desc>
+                  <cit>
+                     <quote>“prtng to Endere”</quote>
+                  </cit>
+                  <gloss>nom/acc.sg.m</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="nominative"/>
+                  <gram type="case" value="accusative"/>
+                  <gram type="number" value="singular"/>
+                  <gram type="gender" value="masculine"/>
+               </gramGrp>
+               <orth>endretstseññe</orth>
+            </form>
+         </entry>
+         <entry xml:id="E_B_kṣāranadī" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>“the name of a river in hell”</quote>
+                  </cit>
+               </desc>
+               <orth>kṣāranadī</orth>
+            </form>
+            <sense>
+               <cit>
+                  <quote>the name of a river in hell</quote>
+               </cit>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="stem_gender" value="feminine"/>
+            </gramGrp>
+            <note>
+               <bibl>
+                  <title corresp="ref:adams2013a"/>
+                  <citedRange>261</citedRange>
+               </bibl>
+            </note>
+            <note resp="resp-masc">LW, PN</note>
+            <form xml:id="F_B_kṣāranadī">
+               <desc>
+                  <cit>
+                     <quote>“the name of a river in hell”</quote>
+                  </cit>
+                  <gloss>f.acc.sg</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="accusative"/>
+                  <gram type="number" value="singular"/>
+               </gramGrp>
+               <orth>kṣāranadī</orth>
+            </form>
+            <etym xml:lang="san">kṣāra-nadī-</etym>
+         </entry>
+         <entry xml:id="E_B_śvetagire" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>“name of a monastery”</quote>
+                  </cit>
+               </desc>
+               <orth>śvetagire</orth>
+            </form>
+            <sense>
+               <cit>
+                  <quote>name of a monastery</quote>
+               </cit>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="stem_gender" value="masculine"/>
+            </gramGrp>
+            <note>
+               <bibl>
+                  <title corresp="ref:adams2013a"/>
+                  <citedRange>706</citedRange>
+               </bibl>
+            </note>
+            <note resp="resp-masc">NPN?</note>
+            <form xml:id="F_B_śvetagire">
+               <desc>
+                  <cit>
+                     <quote>“name of a monastery”</quote>
+                  </cit>
+                  <gloss>m.acc.sg</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="accusative"/>
+                  <gram type="number" value="singular"/>
+               </gramGrp>
+               <orth>śvetagire</orth>
+            </form>
+            <entry xml:id="E_B_śvetagirṣṣe">
+               <form type="lemma">
+                  <desc>
+                     <cit>
+                        <quote>“name of a monastery”</quote>
+                     </cit>
+                  </desc>
+                  <orth>śvetagirṣṣe</orth>
+               </form>
+               <sense>
+                  <cit>
+                     <quote>name of a monastery</quote>
+                  </cit>
+               </sense>
+               <gramGrp>
+                  <gram type="pos" value="adjective"/>
+               </gramGrp>
+               <note>
+                  <bibl>
+                     <title corresp="ref:adams2013a"/>
+                     <citedRange>706</citedRange>
+                  </bibl>
+               </note>
+               <form xml:id="F_B_śvetagirṣṣe">
+                  <desc>
+                     <cit>
+                        <quote>“name of a monastery”</quote>
+                     </cit>
+                     <gloss>nom/acc.sg.m</gloss>
+                  </desc>
+                  <gramGrp>
+                     <gram type="case" value="nominative"/>
+                     <gram type="case" value="accusative"/>
+                     <gram type="number" value="singular"/>
+                     <gram type="gender" value="masculine"/>
+                  </gramGrp>
+                  <orth>śvetagirṣṣe</orth>
+               </form>
+            </entry>
+         </entry>
+         <entry xml:id="E_B_laikar" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>name of a place
+“(?) the Bath”</quote>
+                  </cit>
+               </desc>
+               <orth>laikar</orth>
+            </form>
+            <sense>
+               <def>name of a place</def>
+            </sense>
+            <sense>
+               <cit>
+                  <quote>(?) the Bath</quote>
+               </cit>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+            </gramGrp>
+            <note resp="resp-masc">NPN?</note>
+            <note>
+               <bibl>
+                  <title corresp="ref:adams2013a"/>
+                  <citedRange>610</citedRange>
+               </bibl>
+            </note>
+            <form xml:id="F_B_laikar">
+               <desc>
+                  <cit>
+                     <quote>name of a place
+“(?) the Bath”</quote>
+                  </cit>
+                  <gloss>acc.sg</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="accusative"/>
+                  <gram type="number" value="singular"/>
+               </gramGrp>
+               <orth>laikar</orth>
+            </form>
+         </entry>
+         <entry xml:id="E_B_lokekyak" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>“(a kind of) insect or snake or ‘yakṣa from afar’ (?)”</quote>
+                  </cit>
+               </desc>
+               <orth>lokekyak</orth>
+            </form>
+            <sense>
+               <cit>
+                  <quote>(a kind of) insect or snake or ‘yakṣa from afar’ (?)</quote>
+               </cit>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+               <gram type="stem_gender" value="masculine"/>
+            </gramGrp>
+            <note resp="resp-masc">not clear</note>
+            <form xml:id="F_B_lokekyaka">
+               <desc>
+                  <cit>
+                     <quote>“(a kind of) insect or snake or ‘yakṣa from afar’ (?)”</quote>
+                  </cit>
+                  <gloss>m.nom.pl</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="nominative"/>
+                  <gram type="number" value="plural"/>
+               </gramGrp>
+               <orth>lokekyaka</orth>
+            </form>
+         </entry>
+         <entry xml:id="E_B_lāpar" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>“name of a place”</quote>
+                  </cit>
+               </desc>
+               <orth>lāpar</orth>
+            </form>
+            <sense>
+               <cit>
+                  <quote>name of a place</quote>
+               </cit>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+            </gramGrp>
+            <note>
+               <bibl>
+                  <title corresp="ref:adams2013a"/>
+                  <citedRange>594</citedRange>
+               </bibl>
+            </note>
+            <note resp="resp-masc">PN, LW or NPN?</note>
+            <form xml:id="F_B_lāpar">
+               <desc>
+                  <cit>
+                     <quote>“name of a place”</quote>
+                  </cit>
+                  <gloss>acc.sg</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="accusative"/>
+                  <gram type="number" value="singular"/>
+               </gramGrp>
+               <orth>lāpar</orth>
+            </form>
+            <entry xml:id="E_B_lāparññe">
+               <form type="lemma">
+                  <desc>
+                     <cit>
+                        <quote>“prtng to Lāpar”</quote>
+                     </cit>
+                  </desc>
+                  <orth>lāparññe</orth>
+               </form>
+               <sense>
+                  <cit>
+                     <quote>prtng to Lāpar</quote>
+                  </cit>
+               </sense>
+               <gramGrp>
+                  <gram type="pos" value="adjective"/>
+               </gramGrp>
+               <note>
+                  <bibl>
+                     <title corresp="ref:adams2013a"/>
+                     <citedRange>594</citedRange>
+                  </bibl>
+               </note>
+               <form xml:id="F_B_lāparññe">
+                  <desc>
+                     <cit>
+                        <quote>“prtng to Lāpar”</quote>
+                     </cit>
+                     <gloss>nom/acc.sg.m</gloss>
+                  </desc>
+                  <gramGrp>
+                     <gram type="case" value="nominative"/>
+                     <gram type="case" value="accusative"/>
+                     <gram type="number" value="singular"/>
+                     <gram type="gender" value="masculine"/>
+                  </gramGrp>
+                  <orth>lāparññe</orth>
+               </form>
+            </entry>
+         </entry>
+         <entry xml:id="E_B_wena" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>“string instrument”</quote>
+                  </cit>
+               </desc>
+               <orth>wena</orth>
+            </form>
+            <sense>
+               <cit>
+                  <quote>string instrument</quote>
+               </cit>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+            </gramGrp>
+            <form xml:id="F_B_wena">
+               <desc>
+                  <cit>
+                     <quote>“string instrument”</quote>
+                  </cit>
+                  <gloss>nom.sg</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="nominative"/>
+                  <gram type="number" value="singular"/>
+               </gramGrp>
+               <orth>wena</orth>
+            </form>
+            <etym xml:lang="san">vīṇā-</etym>
+         </entry>
+         <entry xml:id="E_B_rāmagrām" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>name of a village</quote>
+                  </cit>
+               </desc>
+               <orth>rāmagrām</orth>
+            </form>
+            <sense>
+               <def>name of a village</def>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+            </gramGrp>
+            <note>
+               <bibl>
+                  <title corresp="ref:adams2013a"/>
+                  <citedRange>574</citedRange>
+               </bibl>
+            </note>
+            <note resp="resp-masc">LW</note>
+            <form xml:id="F_B_rāmagrām">
+               <desc>
+                  <cit>
+                     <quote>name of a village</quote>
+                  </cit>
+                  <gloss>nom.sg</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="nominative"/>
+                  <gram type="number" value="singular"/>
+               </gramGrp>
+               <orth>rāmagrām</orth>
+            </form>
+            <etym xml:lang="san">rāma-grāma-</etym>
+         </entry>
+         <entry xml:id="E_B_tākko" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>“Tākko, name of a place”</quote>
+                  </cit>
+               </desc>
+               <orth>tākko</orth>
+            </form>
+            <sense>
+               <cit>
+                  <quote>Tākko, name of a place</quote>
+               </cit>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+            </gramGrp>
+            <note resp="resp-masc">NPN?</note>
+            <note>
+               <bibl>
+                  <title corresp="ref:adams2013a"/>
+                  <citedRange>302</citedRange>
+               </bibl>
+            </note>
+            <form xml:id="F_B_takkai">
+               <desc>
+                  <cit>
+                     <quote>“Tākko, name of a place”</quote>
+                  </cit>
+                  <gloss>acc.sg</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="accusative"/>
+                  <gram type="number" value="singular"/>
+               </gramGrp>
+               <orth>takkai</orth>
+            </form>
+         </entry>
+         <entry xml:id="E_B_ceṇuvaṃ" xml:lang="txb">
+            <form type="lemma">
+               <desc>
+                  <cit>
+                     <quote>name of a monastery
+“Ceṇuvana”</quote>
+                  </cit>
+               </desc>
+               <orth>ceṇuvaṃ</orth>
+            </form>
+            <sense>
+               <def>name of a monastery</def>
+            </sense>
+            <sense>
+               <cit>
+                  <quote>Ceṇuvana</quote>
+               </cit>
+            </sense>
+            <gramGrp>
+               <gram type="pos" value="noun"/>
+            </gramGrp>
+            <note>
+               <bibl>
+                  <title corresp="ref:adams2013a"/>
+                  <citedRange>275</citedRange>
+               </bibl>
+            </note>
+            <note resp="resp-masc">LW, PN. Cf. Ogihara 2019: 6 (Veṇuvaṃ, Ceṇuvaṃ)</note>
+            <form xml:id="F_B_ceṇuvaṃ">
+               <desc>
+                  <cit>
+                     <quote>name of a monastery
+“Ceṇuvana”</quote>
+                  </cit>
+                  <gloss>acc.sg</gloss>
+               </desc>
+               <gramGrp>
+                  <gram type="case" value="accusative"/>
+                  <gram type="number" value="singular"/>
+               </gramGrp>
+               <orth>ceṇuvaṃ</orth>
+            </form>
+         </entry>
+         </body></text></TEI>
